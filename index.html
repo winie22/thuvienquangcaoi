@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Winie – Thư viện Mẫu Quảng cáo Sáng tạo</title>
+  <link rel="icon" type="image/png" href="image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Màn hình chờ lúc mở web + thanh tiến độ cuộn -->
+  <div id="splash"><div class="splash-logo">Winie</div></div>
+  <div id="progress"></div>
+
+  <!-- Nền động: các đốm màu pastel + vệt sáng theo chuột -->
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="glow" id="glow"></div>
+
+  <!-- THANH ĐIỀU HƯỚNG (menu thay đổi theo vai trò – xem app.js) -->
+  <header class="nav">
+    <a href="#/" class="logo">Winie<span></span></a>
+    <nav id="menu"></nav>
+  </header>
+
+  <!-- NƠI HIỂN THỊ CÁC GIAO DIỆN -->
+  <main id="app"></main>
+
+  <footer class="foot">
+    <div class="foot-grid">
+      <div>
+        <a href="#/" class="logo">Winie<span></span></a>
+        <p class="foot-about">Thư viện mẫu quảng cáo sáng tạo: nơi tìm cảm hứng, lưu bộ sưu tập và chia sẻ tác phẩm của cộng đồng.</p>
+        <div class="social"><a href="#/" title="Facebook">f</a><a href="#/" title="Instagram">ig</a><a href="#/" title="TikTok">tt</a><a href="#/" title="YouTube">yt</a></div>
+      </div>
+      <div>
+        <h4>Khám phá</h4>
+        <a href="#/">Trang chủ</a><a href="#/tim-kiem">Tìm kiếm mẫu</a><a href="#/yeu-thich">Bộ sưu tập</a><a href="#/dang-tai">Đăng tải mẫu</a>
+      </div>
+      <div>
+        <h4>Danh mục</h4>
+        <a href="#/tim-kiem" data-act="cat" data-id="Mỹ phẩm">Mỹ phẩm</a><a href="#/tim-kiem" data-act="cat" data-id="Đồ uống">Đồ uống</a>
+        <a href="#/tim-kiem" data-act="cat" data-id="Thực phẩm">Thực phẩm</a><a href="#/tim-kiem" data-act="cat" data-id="Thời trang">Thời trang</a>
+      </div>
+      <div>
+        <h4>Nhận cảm hứng mỗi tuần</h4>
+        <form class="news" data-form="news"><input name="email" placeholder="Email của bạn"><button class="btn sm">Đăng ký</button></form>
+        <p class="foot-about" style="margin-top:14px">hello@winie.vn<br>Hà Nội, Việt Nam</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Winie. Bảo lưu mọi quyền.</span>
+      <span><a href="#/">Điều khoản sử dụng</a> · <a href="#/">Chính sách bảo mật</a> · <a href="#/">Liên hệ</a></span>
+    </div>
+  </footer>
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
